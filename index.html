@@ -1,0 +1,293 @@
+<html>
+  <head>
+    <title>Lithish's His Sketches</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/a49ec22ad2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/finName.jpg" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about" onclick="closemenu()">About</a></li>
+            <li><a href="#services" onclick="closemenu()">Services</a></li>
+            <li><a href="#portfolio" onclick="closemenu()">Works</a></li>
+            <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+            <i class="fa-solid fa-rectangle-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+     
+        <div class="header-text">
+          <h1>
+            Heyy <span class="one">Beautees!!</span><br />
+            I'm <span class="two">Lithish</span> from Ooty
+          </h1>
+
+          <p>I am a Designer & Full-stack Web Engineer</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- about container -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="aboutColOne">
+            <img src="images/about.jpeg" />
+          </div>
+          <div class="aboutColTwo">
+            <h1 class="Sub-head" id="font-p">About me</h1>
+            <p align="justify">
+        
+              I am full stack web engineer. I am looking for many tech tool and
+              methodologies to build my career up and to stand as a strong and
+              brittle techy. And I have a beautiful aim to be a top notch Web
+              Engineer. I love to interact with the people who carries similar
+              interests. Beautiful wishes to you the readers.
+            </p>
+            <div class="tab-heads">
+              <p class="tab-links active-link" onClick="opentab('skills')">
+                SkillSet
+              </p>
+              <p class="tab-links" onClick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onClick="opentab('education')">Education</p>
+            </div>
+            <!-- contents one-->
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li  >
+                  <span  >Front-end</span><br />Developing front end for web/app.
+                </li>
+                <li  >
+                  <span  >Back-end</span><br />Developing back end for web/app.
+                </li>
+
+                <li  >
+                  <span  >Client tools</span><br />React, css, JavaScript,
+                  tailWind etc
+                </li>
+                <li  >
+                  <span  >Server Tools</span><br />Node.js, Express.js, PostMan
+                  etc
+                </li>
+              </ul>
+            </div>
+
+            <!-- contents two -->
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>Schoolings</span><br />St.Paul's school, CBE</li>
+                <li><span>College</span><br />SNS-tech BE.CSE</li>
+                <li>
+                  <span>Courses</span><br />Web dev & data science courses at
+                  udemy. <br />
+                  Git-hub course & aws course at GUVI. <br />
+                  Solidity lang at microsoft web docs.
+                </li>
+              </ul>
+            </div>
+
+            <!-- contents three -->
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>INCEND</span><br />Back end intern (2021 june -
+                  july)
+                </li>
+                <li>
+                  <span>ODDU.IN</span><br />Full stack intern (2021 Sept - 2022
+                  March)
+                </li>
+                <li>
+                  <span>THE RECIPROCAL SOLUTION</span><br />Front end intern
+                  (2022 March - present)
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------------services--------------- -->
+    <div id="services">
+      <div class="container">
+        <h1 class="Sub-head">My Stack</h1>
+        <div class="services-list">
+          <div >
+            <i
+              class="fa-solid fa-laptop-code"
+              style="color: rgb(255, 255, 255)"
+            ></i>
+            <h2 style="color: rgb(255, 255, 255)">Web-Design</h2>
+            <p>
+              I love to interact with the people who carries similar interests.
+              Beautiful wishes to you the readers.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+
+          <div>
+            <i
+              class="fa-brands fa-square-js"
+              style="color: rgb(255, 255, 255)"
+            ></i>
+            <h2 style="color: rgb(255, 255, 255)">Front-end</h2>
+            <p>
+              I love to interact with the people who carries similar interests.
+              Beautiful wishes to you the readers.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+
+          <div>
+            <i
+              class="fa-brands fa-node-js"
+              style="color: rgb(255, 255, 255)"
+            ></i>
+            <h2 style="color: rgb(255, 255, 255)">Back-end</h2>
+            <p>
+              I love to interact with the people who carries similar interests.
+              Beautiful wishes to you the readers.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------------portfolio------------- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="Sub-head">My projects</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.jpeg"></img>  
+            <div class="layer">
+              <h3>News-Letter-App</h3>
+              <p>It is a node.js application which uses node for the back end and java script for the front end interfact</p>
+              <a href="https://enigmatic-bastion-94927.herokuapp.com/"><i class="fa-solid fa-up-right-from-square"></i>
+            </a>
+          
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-22.jpeg"></img>
+            <div class="layer">
+              <h3>ToDo-App</h3>
+              <p>It is a todo list node.js application which uses node for the back end and java script for the front end interfact.</p>
+              <a href="https://todays-project-todo-web-app.herokuapp.com/"><i class="fa-solid fa-up-right-from-square"></i>
+                
+              </a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-33.jpeg"></img>
+            <div class="layer">
+              <h3>CRUD-App</h3>
+              <p>It is an mern stack application which uses node for the back end and react.js  for the front end interfact</p>
+              <a href="https://62d2883a7fc77369941740f4--incomparable-otter-1ea0cc.netlify.app/"><i class="fa-solid fa-up-right-from-square"></i>
+            </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-head">ping</h1>
+            
+            <!-- <p><i class="fa-solid fa-square-envelope"></i>positronpeddy875@gmail.com</p> -->
+            <!-- <p><i class="fa-solid fa-phone-volume"></i>+91-12312312</p> -->
+            <div class="social-icons"> 
+              <a href>
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href>
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href>
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a> 
+            </div>
+            <a href="images/FinCV.pdf" style="color:white;" class="btn btn2" download>My CV</a>
+  
+          </div>
+          <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Name" required>
+            <input type="email" name="Email" placeholder="Email" required>
+            <textarea name="Message"   rows="6" placeholder="Your Messsage"></textarea>
+            <button type="submit" class="btn btn2" style="background-color: #4771c6; color: white; border-color: #4771c6;">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+        </div>
+      </div>
+<div class="copy">
+  <p>©Copyright Lithish</p>
+</div>
+    </div>
+
+    <!-------- END --------->
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabContents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabContent of tabContents) {
+          tabContent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+  <script>
+    var sidemenu = document.getElementById("sidemenu")
+
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
+
+    function closemenu() {
+      sidemenu.style.right = "-410px";
+    }
+
+  </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzqAxMa32FeKHb5XBp-xIOJ8V_m5YOEYsNUGwEibzWyECZoE7RQ_pECYbFeVXH--N4p/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          msg.innerHTML = "Data sent successfully"
+          setTimeout(() => {
+            msg.innerHTML = ""
+          }, 4000);
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  </body>
+</html>
